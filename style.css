@@ -1,0 +1,22 @@
+h1{
+    color:black;
+}
+h2{
+    color:black;
+}
+h3{
+    color:black;
+}
+p{
+    color:black;
+}
+a{
+    color:black;
+}
+header,section,footer{
+    blackground-color: #d6ccc2;
+}
+.home{
+    blackground-color: yellow;
+}
+
