@@ -1,8 +1,12 @@
 .home h1{
     color:white;
+    background-position:center;
+    font-size: 14px;
 }
 .home h2{
     color:white;
+    background-position:center;
+    font-size: 14px;
 }
 p{
     color:black;
