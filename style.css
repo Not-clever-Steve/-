@@ -1,12 +1,16 @@
 .home h1{
     color:white;
     background-position:center;
-    font-size: 14px;
+    font-size: 20px;
+    align-itemsm:center;
+    justify-content:center;
 }
 .home h2{
     color:white;
     background-position:center;
-    font-size: 14px;
+    font-size: 20px;
+    align-itemsm:center;
+    justify-content:center;
 }
 p{
     color:black;
