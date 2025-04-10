@@ -2,6 +2,15 @@
 <html lang="zh-Hans">
 
 <head>
+    <script>
+        window.onload = function() {
+            // 获取当前浏览量或初始化为0
+            let views = localStorage.getItem('pageViews') || 0;
+            views = parseInt(views) + 1;
+            localStorage.setItem('pageViews', views);
+            document.getElementById('viewCount').textContent = views;
+        };
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Duck Game</title>
@@ -56,6 +65,7 @@
         <section class="home">
         <h2>最新版本即将推出!</h2>
         <p>令人耳目一新的新版面</p>
+        <p>本页浏览量: <span id="viewCount">0</span></p>
         </section>
         </main>
         <footer>
