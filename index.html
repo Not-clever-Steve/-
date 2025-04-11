@@ -5,7 +5,8 @@
     <script>
         window.onload = function() {
             // 获取当前浏览量或初始化为0
-            let views = localStorage.getItem('pageViews') || 0;
+            let views = localStorage.getItem('pageViews');
+            // || 0
             views = parseInt(views) + 1;
             localStorage.setItem('pageViews', views);
             document.getElementById('viewCount').textContent = views;
