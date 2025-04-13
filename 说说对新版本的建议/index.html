@@ -12,5 +12,16 @@
         <input type="text" name="t1" placeholder="请输入你对新版本的建议…">
         <button type="submit">提交建议</button>
     </section>
+    <div id="datetime"></div>
+    <script>
+        var now=new Date();
+        //获取年月日、时间
+        var year=now.getFullYear();
+        var month=now.getMonth();
+        var day=now.getDate();
+        var hours=now.getHours();
+        var minutes=now.getMinutes();
+        var seconds=now.getSeconds();
+        document.getElemetById('datetime').innerHTML=year+"-"+mouth+"-"+day+" "+hours+":"+minutes+":"+seconds;
 </body>
 </html>
