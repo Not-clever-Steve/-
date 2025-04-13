@@ -44,7 +44,7 @@
                 </a>
             </li>
         </ul>
-    <h1 id="datetime"></h1>
+    <div id="datetime"></div>
     <script>
         var now=new Date();
         //获取年月日、时间
@@ -54,6 +54,6 @@
         var hours=now.getHours();
         var minutes=now.getMinutes();
         var seconds=now.getSeconds();
-        document.getElemetById('datetime').innerHTML=year+"-"+mouth+"-"+day+" "+hours+":"+minutes+":"+seconds;
+        document.getElementById('datetime').innerHTML=year+"-"+mouth+"-"+day+" "+hours+":"+minutes+":"+seconds;
 </body>
 </html>
