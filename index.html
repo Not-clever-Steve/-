@@ -2,16 +2,6 @@
 <html lang="zh-Hans">
 
 <head>
-    <script>
-        window.onload = function() {
-            // 获取当前浏览量或初始化为0
-            let views = localStorage.getItem('pageViews');
-            // || 0
-            views = parseInt(views) + 1;
-            localStorage.setItem('pageViews', views);
-            document.getElementById('viewCount').textContent = views;
-        };
-    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Duck Game</title>
@@ -67,11 +57,19 @@
         </ul>
     </div>
         </header>
+        <script>
+            let count = localStorage.getItem('pageView');
+            count = count ? parseInt(count) : 0;
+            count++; // 增加访问次数
+            localStorage.setItem('pageView', count); // 存储新的访问次数
+            document.getElementById('viewCount').innerText = count; // 显示访问次数
+        </script>
         <main>
         <section class="home">
         <h2>欢迎游玩鸭鸭游戏</h2>
         <p>我们会不断推出新版本的！</p>
-        <p>本页浏览量: <span id="viewCount">0</span></p>
+        <p>本页浏览量：</p>
+        <p id="viewCount">0</p>
         </section>
         </main>
         <footer>
