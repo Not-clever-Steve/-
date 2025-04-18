@@ -16,6 +16,13 @@
     <div class="channel">
         Duck Game
     </div>
+    <script>
+        let count = localStorage.getItem('pageView');
+        count = count ? parseInt(count) : 0;
+        count++; // 增加访问次数
+        localStorage.setItem('pageView', count); // 存储新的访问次数
+        document.getElementById('viewCount').innerText = count; // 显示访问次数
+    </script>
     <div class="menu_container">
         <input type="checkbox" name="open" id="open">
         <label for="open" class="bt">
@@ -57,13 +64,7 @@
         </ul>
     </div>
         </header>
-        <script>
-            let count = localStorage.getItem('pageView');
-            count = count ? parseInt(count) : 0;
-            count++; // 增加访问次数
-            localStorage.setItem('pageView', count); // 存储新的访问次数
-            document.getElementById('viewCount').innerText = count; // 显示访问次数
-        </script>
+        
         <main>
         <section class="home">
         <h2>欢迎游玩鸭鸭游戏</h2>
