@@ -31,6 +31,18 @@
             viewCountElement.textContent = 'Page views: ' + pageViews;
         });
     </script>
+   
+<script>
+$(document).ready(function(){
+    $.ajax({
+        url: 'count.php',
+        type: 'GET',
+        success: function(data) {
+            $('#counter').text(data);
+        }
+    });
+});
+</script>
 </head>
 
 <body>
@@ -38,6 +50,7 @@
     <div class="channel">
         Duck Game
     </div>
+    <h1>访问量: <span id="counter">加载中...</span></h1>
     <h2>欢迎游玩鸭鸭游戏</h2>
     <p>我们会不断推出新版本的！</p>
     <p id="view-count"></p>
