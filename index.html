@@ -9,6 +9,28 @@
     <meta name="keywords" content="Duck,Game,Duck Game,Duck游戏,Duck Game游戏,Duck游戏官网,Duck Game游戏官网,不太智慧的史蒂夫,_TMT_">
     <link rel="icon" href="https://github.com/Not-clever-Steve/Duck-Game/blob/main/icon.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
+    <script>
+        // 检查localStorage中是否有访问量记录，如果没有则初始化为0
+        var pageViews = localStorage.getItem('pageViews');
+        if (pageViews === null) {
+            pageViews = 0;
+        } else {
+            // 将字符串转换为数字
+            pageViews = parseInt(pageViews, 10);
+        }
+
+        // 每次访问页面时增加访问量
+        pageViews++;
+
+        // 将更新后的访问量存储到localStorage中
+        localStorage.setItem('pageViews', pageViews.toString());
+
+        // 在页面上显示访问量
+        document.addEventListener('DOMContentLoaded', function() {
+            var viewCountElement = document.getElementById('view-count');
+            viewCountElement.textContent = 'Page views: ' + pageViews;
+        });
+    </script>
 </head>
 
 <body>
@@ -16,18 +38,9 @@
     <div class="channel">
         Duck Game
     </div>
-    <h3>本页浏览量：</h3>
-    <p id="viewCount">0</p>
     <h2>欢迎游玩鸭鸭游戏</h2>
     <p>我们会不断推出新版本的！</p>
-
-    <script>
-        var count = localStorage.getItem('pageView');
-        count = count ? parseInt(count) : 0;
-        count++; // 增加访问次数
-        localStorage.setItem('pageView', count); // 存储新的访问次数
-        document.getElementById('viewCount').innerText = count; // 显示访问次数
-    </script>
+    <p id="view-count"></p>
     <div class="menu_container">
         <input type="checkbox" name="open" id="open">
         <label for="open" class="bt">
