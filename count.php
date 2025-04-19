@@ -1,5 +1,5 @@
 <?php
-$file = 'counter.txt'; // 访问量文件
+$file = 'visits.txt'; // 访问量文件
 if (!file_exists($file)) {
     $handle = fopen($file, 'w');
     fwrite($handle, 0);
