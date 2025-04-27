@@ -21,7 +21,26 @@
 html {
     font-size: 14px;
 }
-
+a:link{
+    color:white;
+    font-size:14px;
+    text-align:center;
+}
+a:visited{
+    color:white;
+    font-size:14px;
+    text-align:center;
+}
+a:hover{
+    color:grey;
+    font-size:14px;
+    text-align:center;
+}
+a:active{
+    color:sky-blue;
+    font-size:14px;
+    text-align:center;
+}
 .home {
         color:white;
         height:85vh;
