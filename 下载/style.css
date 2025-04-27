@@ -23,19 +23,19 @@ html {
 }
 a:link{
     color:white;
-    font-size:40px;
+    font-size:14px;
 }
 a:visited{
     color:white;
-    font-size:40px;
+    font-size:14px;
 }
 a:hover{
     color:grey;
-    font-size:40px;
+    font-size:14px;
 }
 a:active{
     color:#87CEEB;
-    font-size:40px;
+    font-size:14px;
 }
 .home {
         color:white;
