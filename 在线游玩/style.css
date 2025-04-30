@@ -21,7 +21,22 @@
 html {
     font-size: 14px;
 }
-
+a:link{
+    color:white;
+    font-size:25px;
+}
+a:visited{
+    color:white;
+    font-size:25px;
+}
+a:hover{
+    color:grey;
+    font-size:25px;
+}
+a:active{
+    color:blue;
+    font-size:25px;
+}
 .home {
         color:white;
         height:85vh;
